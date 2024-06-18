@@ -1,0 +1,20 @@
+name: gsnb
+channels:
+  - pytorch
+  - conda-forge
+  - nvidia
+  - defaults
+dependencies:
+  - cudatoolkit
+  - plyfile
+  - python=3.8
+  - pip=22.3.1
+  - pytorch=2.1.0
+  - pytorch-cuda=12.1
+  - torchaudio=2.1.0
+  - torchvision=0.16.0
+  - tqdm
+  - icecream
+  - pip:
+    - submodules/diff-gaussian-rasterization
+    - submodules/simple-knn

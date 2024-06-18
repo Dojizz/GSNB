@@ -1,0 +1,19 @@
+{
+	"loss": {
+		"otype": "RelativeL1"
+	},
+	"optimizer": {
+		"otype": "Adam"
+	},
+	"encoding_tinycudann": {
+		"otype": "Frequency",
+		"n_frequencies": 6
+	},
+	"network_tinycudann": {
+		"otype": "FullyFusedMLP",
+		"activation": "LeakyReLU",
+		"output_activation": "Tanh",
+		"n_neurons": 64,
+		"n_hidden_layers": 2
+	}
+}
